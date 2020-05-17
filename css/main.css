@@ -1,0 +1,500 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: helve;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/helvetica-neue-regular.ttf);
+}
+@font-face {
+  font-family: seg;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/segoeuiz.ttf);
+}
+
+@font-face {
+  font-family: source;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/SourceSansPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: avo;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/UTM%20Avo.ttf);
+}
+@font-face {
+  font-family: FUTURA;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/VNF-Futura%20Regular.ttf);
+}
+@font-face {
+  font-family: pi;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/UVF%20Pistilli-Roman.ttf);
+}
+@font-face {
+  font-family: plau;
+  src: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/font/playfair-display.bold-italic.ttf);
+}
+
+
+
+*{
+	margin:0px;
+	padding: 0px;
+}
+body
+{
+	height: 1080px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	font-family: roboto;
+}
+.container
+{
+	width:1920px;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	margin: 0 auto;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scroll-nap-type: y mandatory;
+	
+}
+.nav02
+{
+	width:1920px;
+	height:100px;
+	position: fixed;
+	z-index:10;
+	font-size: 22px;
+	display: flex;
+	top:0px;
+}
+.nav02_left
+{
+	width: 60%;
+	height:100px;
+	float:left;
+	font-family: futura;
+	font-size:55px;
+	line-height: 40px;
+	
+}
+
+
+.nav02_right
+{
+	width:40%;
+	float: right;
+	height:100px;
+	font-family: helve;
+	color: black;
+}
+
+.nav02_left ul
+{
+	list-style: none;
+	
+}
+
+.nav02_left ul li
+{
+	padding: 55px 0px 20px 94px;
+	float: left;
+	
+}
+.nav02_left ul li a
+{
+	text-decoration: none;
+	display: inline-block;
+	color: black;
+}
+.nav02_right ul
+{
+	list-style: none;
+}
+
+.nav02_right ul li
+{
+	padding: 65px 0px 20px 60px;
+	float: left;
+}
+.nav02 ul li a
+{
+	text-decoration: none;
+	color: black;
+}
+.nav02 ul li a:hover
+{
+	color:skyblue;
+}
+.nav01
+{
+	width: 10%;
+	height: 5%;
+	top:79%;
+	position: fixed;
+	left: 3%;
+	z-index: 20;
+	transform: rotate(-90deg);
+}
+
+.nav01 ul
+{
+	list-style: none;
+	margin: 0px;
+	
+}
+
+.nav01 ul li
+{
+	padding: 10px 15px 10px 15px;
+	float:left;
+}
+
+
+.scroll
+{
+	width:5%;
+	height:100%;
+	top:60%;
+	position: fixed;
+	left: 90%;
+	z-index: 10;
+}
+
+.scroll ul
+{
+	list-style: none;
+}
+.scroll ul li
+{
+	padding:10px;
+}
+
+#replay:active + #trangchu,
+#replay:active + #trangchu #gioithieu,
+#replay:active + #trangchu #lienhe,
+#replay:active + #trangchu #blog
+
+
+{
+	animation-name:none;
+}
+#trangchu
+{
+	width: 100%;
+	height: 1080px;
+	animation: fadeInLeft 1s linear forwards;
+	background: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/images/bg1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	scroll-nap-align: center;
+}
+#trangchu h3
+{
+	font-family: futura;
+	font-size: 77px;
+	text-align: left;
+	animation: fadeInLeft 3s forwards;
+}
+#trangchu p
+{
+	font-size: 22px;
+	color:lightslategrey;
+	animation: backInUp 2s 2s forwards;
+}
+
+.home_left
+{		
+	width:40%;
+	height:880px;
+	float:left;
+	padding-top: 200px;
+	
+}
+
+.home_content
+{
+	width: 445px;
+	height:770px;	
+	margin-top: 100px;
+	margin-left: 90px;
+	text-align: justify;
+	letter-spacing: 0px;
+}
+
+.home_content button
+{
+	width: 220px;
+	height: 60px;
+	border: 2px solid orange;
+	border-radius: 45px;
+	font-size: 25px;
+	transition: 0.5s;
+	margin-left: 7px;
+	background-color: orange;
+	animation: bounceIn 2s 3s forwards;
+	color:white;
+	
+}
+.home_content button a
+{
+	text-decoration: none;
+	color:white;
+}
+.home_content button:hover
+{
+	background-color:orange;
+	color: white;
+	cursor:pointer;
+	box-shadow: 0px 3px 3px black;
+}
+.home_right
+{
+	width:60%;
+	height:1080px;
+	float:right;
+	
+}
+
+.home_right img
+{
+    width:670px;
+	height:auto;	
+	margin-top: 90px;
+	animation: backInLeft 3s 1s forwards;
+	
+}
+
+#gioithieu
+{
+	width: 100%;
+	height: 1080px;
+	
+	background: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/images/bg2.jpg) no-repeat center center/cover;
+	scroll-nap-align: center;
+}
+
+#gioithieu h3
+{
+	font-size: 45px;
+	animation: bounceInUp 2s 3s forwards;
+	font-family: futura;
+	text-align: left;
+
+}
+#gioithieu p
+{
+	font-size: 25px;
+	animation: bounceIn 2s 3s forwards;
+	text-align: justify;
+	color: dimgrey;
+	
+}
+.info_left
+{
+	width:40%;
+	height:1080px;
+	float: left;
+}
+.info_left .info_content
+{
+	width: 400px;
+	height:470px;
+	margin-top: 270px;
+	margin-left: 90px;
+	text-align: justify;
+	letter-spacing: 0px;
+}
+.info_content button
+{
+	width:220px;
+	height: 60px;
+	border:2px solid blue;
+	border-radius:45px;
+	font-size: 25px;
+	transition:0.5s;
+	background-color: blue;
+	color:white;
+	animation: bounceIn 2s 3s forwards;
+	
+}
+.info_content button a
+{
+	text-decoration: none;
+	color:white;
+}
+.info_content button:hover
+{
+	background: blue;
+	color: white;
+	cursor:pointer;
+	box-shadow: 0px 3px 3px black;
+}
+.info_right
+{
+	width:60%;
+	height:1080px;
+	float:right;
+}
+.info_right img
+{
+	margin-top: 100px;
+	margin-left: 200px;
+	animation: bounceIn 2s 1s forwards;
+	opacity:0;
+}
+.info_content hr
+{
+	float:left;
+}
+
+#lienhe
+{
+	width: 100%;
+	height: 1080px;
+	
+	background: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/images/bg5.jpg) no-repeat center center/cover;
+	scroll-nap-align: center;
+}
+#lienhe h3
+{
+	font-size: 81px;
+	animation: fadeInLeft 2s linear forwards;
+	font-family: MI;
+	text-align: right;
+}
+#lienhe p
+{
+	font-size: 22px;
+	animation: backInLeft 2s 3s forwards;
+	text-align:justify;
+	color:lightslategrey;
+	font-family: helve;
+}
+.cont_content button
+{
+	width: 220px;
+	height: 60px;
+	border: 2px solid yellow;
+	border-radius: 45px;
+	font-size: 25px;
+	transition: 0.5s;
+	margin-left: 330px;
+	background-color: yellow;
+	animation: bounceIn 2s 3s forwards;
+	
+}
+.cont_content button a
+{
+	text-decoration: none;
+	color:white;
+}
+.cont_content button:hover
+{
+	background-color:yellow;
+	color: whitesmoke;
+	cursor:pointer;
+	box-shadow: 0px 3px 3px black;
+}
+.cont_content hr
+{
+	float:right;
+}
+
+.cont_left
+{
+	width:45%;
+	height:1080px;
+	float:left;
+}
+.cont_left img
+{
+	width:550px;
+	margin-top: 130px;
+	margin-left: 50px;
+	animation: bounceIn 2s 1s forwards;
+	opacity:0;
+}
+.cont_right
+{
+	width:55%;
+	height:1080px;
+	float:right;
+}
+.cont_right .cont_content
+{
+	width: 550px;
+	height:570px;	
+	letter-spacing: 0px;
+	margin-top:350px;
+	margin-left:240px;
+	
+}
+
+
+
+#blog
+{   
+	width: 100%;
+	height: 1080px;
+	animation: fadeInLeft 2s linear forwards;
+	background: url(file:///C:/Users/ADMIN/Desktop/bai%20tap/images/bg4.jpg) no-repeat center center/cover;
+		
+	)
+   scroll-nap-align: center;
+}
+
+.blog_left
+{
+	width:40%;
+	height:1080px;
+	float: left;
+	
+}
+.blog_left .blog_content
+{
+	width: 1650px;
+	height: 800px;	
+	margin-top: 140px;
+	margin-left:260px;
+	text-align: justify;
+	letter-spacing: 0px;
+	justify-content: center;
+	display: flex;
+	color: lightslategrey;
+	animation: backInLeft 2s 3s forwards;
+}
+.blog_right
+{
+	width:60%;
+	height:1080px;
+	float:right;
+	
+}
+.blog_right img
+{
+	width: 650px;
+	height:auto;
+	margin-top: 100px;
+	margin-left: 80px;
+	animation: bounceIn 2s 1s forwards;
+	opacity:0;
+}
+#blog h3
+{
+	font-size: 120px;
+	animation: bounceIn 1s 2s forwards;
+	letter-spacing: 350px;
+	font-family: FUTURA;
+}
+
+
+#blog p
+{
+	font-size: 18px;
+	animation: fadeInLeft 2s 4s forwards;
+}
+
